@@ -11,8 +11,8 @@ SRC = src/*.c
 INCLUDE = -Icello/include
 LIB = cello/lib/libCello.a
 
-run: $(OUT_BIN)
-	./$(OUT_BIN)
-
 $(OUT_BIN): $(SRC)
 	gcc $(SRC) $(INCLUDE) $(LIB) -o $(OUT_BIN)
+
+run: $(OUT_BIN)
+	./$(OUT_BIN)
